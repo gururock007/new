@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Arcade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="fonts">
+    <link rel="stylesheet" href="01.css">
+    <script src="01.js"></script>
+</head>
+<body>
+    <div class="nav-box">
+        <nav class="nav">
+            <div class="nav-top" id="nt" onmouseover="navtopline()" onmouseleave="navtopnoline()">
+                <ul class="navlist" onmouseover="navtopline()" onmouseleave="navtopnoline()">
+                    <span class="listc-box"><li class="listc "><a href="#">FASHION & ACCESSORIES</a></li></span>
+                    <span class="listc-box"><li class="listc"><a href="#">FRAGNANCE & BEAUTY</a></li></span> 
+                </ul>
+                <div class="heading"><a>LOREM</a></div>
+                <div class="form-inline-box">
+                    <div class="form-inline" id="fi">
+                        <div class="search-box-open">
+                            <div class="search-box">
+                                <form class="form">
+                                    <input class="searchbox" type="search" placeholder="What do you want to search?" aria-label="Search" id="sb" onfocus="searchbx()" onmouseover="searchbx()" onmouseleave="searchbxout()">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <button class="searchbtn" type="submit" onmouseover="searchbx(),lining()" onmouseleave="searchbxout(),nolining()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Black" class="bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-bottom">
+                <ul class="clothingbar" id="cb" onmousemove="navtopline()" onmouseleave="navtopnolone()">
+                    <li><a>WOMEN'S FASHION</a></li>
+                    <li>MEN'S FASHION</li>    
+                    <li>BAGS</li>
+                    <li>JEWELRY & TIMEPIECES</li>
+                    <li>KIDS & BABY</li>
+                    <li>MAISON</li>
+                    <li>HAUTE COUTURE</li>
+                    <li>NEWS & FASHION SHOWS</li>
+                    <li>GIFTS & PERSONALIZATION</li>
+                </ul>
+                <ul class="fragnance">
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="cover-img-box">
+        <div class="imgbox-1">
+            <div class="fixed_box">
+                <img class="img1" src="pexels-ylanite-koppens-934069.jpg">
+                <div  class="imgbox-text-1">
+                    <p>CLOTHING</p>
+                </div>
+            </div>
+        </div>
+        <div class="imgbox-2">
+            <div class="fixed_box">
+                <img class="img2" src="pexels-karolina-grabowska-8361525.jpg">
+                <div class="imgbox-text-2">
+                    <p>FRAGNANCE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

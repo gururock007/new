@@ -1,0 +1,162 @@
+.nav
+{
+    display: grid;
+    height: 110px;
+    border: 0px solid black;
+}
+.nav-top{
+    display: inline-flex;
+    height: 55px;
+}
+.navlist
+{
+    font-size: 14px;
+    display: flex;
+    font-family: "Lato";
+    list-style: none;
+    width: 360px;
+    border-bottom: 0px solid black;
+    align-items: center;
+    justify-content: space-around;
+}
+.listc-box{
+    display: flex;
+    width: 175px;
+}
+
+.listc
+{
+    display: contents;
+}
+.listc a{
+    text-decoration: inherit;
+    color: black;
+    border: 0px solid black;
+    padding: 0.7%;
+}
+.listc a:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+.listc-box:hover .clothingbar{
+    display: flex;
+}
+.listc a:focus{
+    font-weight: bold;
+}
+.listc-box.clothingbar{
+    display: flex;
+}
+.heading{
+    font:25px bolder;
+    display: inline-flex;
+    width: 56%;
+    justify-content: space-around;
+    align-items: center;
+}
+.heading:hover{
+    cursor: pointer;
+}
+.form-inline-box{
+    display: inline-flex;
+    position: relative;
+
+}
+.form-inline{
+    padding: 7px;
+    display: inline-flex;
+    border-bottom: 0px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.search-box-open{
+    display: flex;
+    width: 166px;
+}
+.form{
+    width: inherit;
+}
+.search-box{
+    width: 0px;
+}
+.searchbox{
+    width: inherit;
+    border: none;
+    height: 30px;
+}
+.searchbox:focus-visible{
+    outline:none;
+}
+.searchbtn{
+    display: flex;
+    background-color: white;
+    border: 0px;
+    width: 28px;
+    height: 30px;
+}
+.searchbtn:hover{
+    cursor: pointer;
+}
+#sb:hover:active{
+    width: 166px;
+}
+.nav-bottom{
+    height: 55px;
+    justify-content:space-around;
+    align-items: center;
+}
+.clothingbar{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    font-family: "Lato";
+}
+.cover-img-box{
+    display: flex;
+    height: 680px;
+    width: 100%;
+    z-index: -1;
+}
+.imgbox-1{
+    height: inherit;
+    width: 100%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.imgbox-1:hover {
+    width: 120%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.fixed_box{
+    height: 680px;
+    width: 708px;
+}
+.img1{
+    width: 130%;
+}
+.imgbox-2{
+    height: inherit;
+    width: 100%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    justify-content: center;
+    text-align: center;
+}
+.img2{
+    width: 100px;
+}
+.imgbox-2:hover{
+    width: 120%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.clothingimg{   
+    width: 100px;
+}
