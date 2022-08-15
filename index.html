@@ -12,12 +12,15 @@
 <body>
     <div class="nav-box">
         <nav class="nav">
-            <div class="nav-top" id="nt" onmouseover="navtopline()" onmouseleave="navtopnoline()">
-                <ul class="navlist" onmouseover="navtopline()" onmouseleave="navtopnoline()">
-                    <span class="listc-box"><li class="listc "><a href="#">FASHION & ACCESSORIES</a></li></span>
+            <div class="nav-top" id="nt">
+                <!-- onmouseover="navtopline()" onmouseleave="navtopnoline()" -->
+                <ul class="navlist">
+                    <!-- onmouseover="clothingbaropen()" onmouseleave="timeout()" -->
+                    <span class="listc-box" onclick="myFunction()" ><li class="listc "><a href="#">FASHION & ACCESSORIES</a></li></span>
                     <span class="listc-box"><li class="listc"><a href="#">FRAGNANCE & BEAUTY</a></li></span> 
                 </ul>
-                <div class="heading"><a>LOREM</a></div>
+                <!-- onmouseover="navtopline()" onmouseleave="navtopnoline()" -->
+                <div class="heading" ><a >LOREM</a></div>
                 <div class="form-inline-box">
                     <div class="form-inline" id="fi">
                         <div class="search-box-open">
@@ -37,7 +40,8 @@
                 </div>
             </div>
             <div class="nav-bottom">
-                <ul class="clothingbar" id="cb" onmousemove="navtopline()" onmouseleave="navtopnolone()">
+                <!-- onmousemove="navtopline(),clothingbaropen()" onmouseleave="navtopnolone(),clothingbarclose()" -->
+                <ul class="clothingbar"  id="cb" >
                     <li><a>WOMEN'S FASHION</a></li>
                     <li>MEN'S FASHION</li>    
                     <li>BAGS</li>
@@ -56,19 +60,19 @@
     </div>
     <div class="cover-img-box">
         <div class="imgbox-1">
-            <div class="fixed_box">
-                <img class="img1" src="pexels-ylanite-koppens-934069.jpg">
-                <div  class="imgbox-text-1">
-                    <p>CLOTHING</p>
-                </div>
+            <div class="fixed_box-1">
+                <img class="img1" src="pexels-ylanite-koppens-934069.jpg"> 
+            </div>
+            <div  class="imgbox-text-1">
+                <p>CLOTHING</p>
             </div>
         </div>
         <div class="imgbox-2">
-            <div class="fixed_box">
+            <div class="fixed_box-2">
                 <img class="img2" src="pexels-karolina-grabowska-8361525.jpg">
-                <div class="imgbox-text-2">
-                    <p>FRAGNANCE</p>
-                </div>
+            </div>
+            <div class="imgbox-text-2">
+                <p>FRAGNANCE</p>
             </div>
         </div>
     </div>
