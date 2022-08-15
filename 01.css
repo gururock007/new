@@ -8,6 +8,12 @@
     display: inline-flex;
     height: 55px;
 }
+.nav-top:hover{
+    border-bottom: 1px solid black;
+}
+.nav-top:focus .nav-bottom{
+    visibility: visible;
+}
 .navlist
 {
     font-size: 14px;
@@ -23,7 +29,6 @@
     display: flex;
     width: 175px;
 }
-
 .listc
 {
     display: contents;
@@ -37,15 +42,15 @@
 .listc a:hover{
     cursor: pointer;
     font-weight: bold;
-}
-.listc-box:hover .clothingbar{
-    display: flex;
+}   
+.listc-box.a:hover .nav-bottom{
+    visibility: visible;
 }
 .listc a:focus{
     font-weight: bold;
 }
-.listc-box.clothingbar{
-    display: flex;
+.listc-box.a:focus .nav-bottom{
+    visibility: visible;
 }
 .heading{
     font:25px bolder;
@@ -104,6 +109,7 @@
     height: 55px;
     justify-content:space-around;
     align-items: center;
+    visibility: hidden;
 }
 .clothingbar{
     list-style: none;
@@ -134,12 +140,29 @@
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
-.fixed_box{
+.fixed_box-1{
+    left: 0%;
+    overflow: hidden;
     height: 680px;
-    width: 708px;
+    z-index: 0;
+    position:relative;
+    width: 827px;
 }
 .img1{
-    width: 130%;
+    width: 135%;
+}
+.imgbox-text-1{
+    background-color: #f3f7f670;
+    font-size: 20px;
+    position: absolute;
+    top: 51%;
+    left: 21%;
+    transition: 0.5s;
+    padding: 0.2% 1.5%;
+}
+.imgbox-1:hover .imgbox-text-1{
+    left: 24%;
+    transition: 0.5s;
 }
 .imgbox-2{
     height: inherit;
@@ -148,15 +171,34 @@
     transition-timing-function: ease-in-out;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
+}
+.fixed_box-2{
+    left: 42%;
+    overflow: hidden;
+    height: 680px;
+    z-index: -1;
+    position: absolute;
+    width: 827px;
 }
 .img2{
-    width: 100px;
+    width: 124%;
 }
 .imgbox-2:hover{
     width: 120%;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
-.clothingimg{   
-    width: 100px;
+.imgbox-text-2{
+    background-color: #f3f7f670;
+    font-size: 20px;
+    position: absolute;
+    top: 51%;
+    left: 71%;
+    transition: 0.5s;
+    padding: 0.2% 1.5%;
+}
+.imgbox-2:hover .imgbox-text-2{
+    left: 68%;
+    transition: 0.5s;
 }
