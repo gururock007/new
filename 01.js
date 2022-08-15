@@ -24,3 +24,19 @@ function clothingbaropen(){
 function clothingbarclose(){
     document.getElementById("cb").style.display = "none";
 }
+function timeout(){
+    setTimeout(function(){document.getElementById("cb").style.display = "none";},2000)
+}
+function myFunction() {
+    document.getElementById("cb").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.listc-box')) {
+    var myDropdown = document.getElementById("cb");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
